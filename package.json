@@ -1,8 +1,8 @@
 {
-  "name": "madn-ssr",
+  "name": "ts-node-template",
   "version": "0.0.1",
-  "description": "vue ssr + websockets",
-  "main": "dist/main.js",
+  "description": "A TS node template",
+  "main": "src/main.js",
   "scripts": {
     "dev": "nodemon src/main.ts",
     "dev:debug": "nodemon --inspect src/main.ts",
