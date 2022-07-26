@@ -1,4 +1,5 @@
 import express from 'express'
+import SpatialScreening from './modules/SpatialScreening/SpatialScreening';
 import config from "./utils/config.loader"
 
 const app = express();
@@ -11,3 +12,10 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   return console.log(`server is listening on ${port}`)
 });
+
+const screening = new SpatialScreening({
+  districtLevel: {label: "Statistische Gebiete"},
+  layers: {
+    point: ["146"]
+  }
+})

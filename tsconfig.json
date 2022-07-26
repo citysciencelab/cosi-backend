@@ -14,16 +14,22 @@
         "resolveJsonModule": true,
         "noImplicitAny": false,
         "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
         "sourceMap": true,
         "baseUrl": ".",
+        "skipLibCheck": true,
         "types": [
             "node",
             "express"
         ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ],
         "paths": {
-            "@/*": [
-                "src/*"
-            ],
+            "SpatialScreening": [
+                "types/SpatialScreening"
+            ]
         },
         "lib": [
             "esnext",
@@ -38,6 +44,7 @@
         "src/**/*.vue",
         "tests/**/*.ts",
         "tests/**/*.tsx",
+        "types/**/*.d.ts"
     ],
     "exclude": [
         "node_modules"
