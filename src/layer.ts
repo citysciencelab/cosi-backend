@@ -1,8 +1,8 @@
 import axios from "axios";
 import { readFeatures } from "./geoio";
 import Feature from "ol/Feature";
-import { getFeaturePOST } from "./api/wfs";
-import fs from 'fs'
+import { getFeatureGET, getFeaturePOST } from "./api/wfs";
+import config from "./utils/config.loader"
 
 export interface LayerDefinition {
     id: string
@@ -37,41 +37,47 @@ export async function initializeLayerList(url?: string): Promise<LayerDefinition
     return rawLayerList
 }
 
+export async function getLayerList() {
+    await initializeLayerList()
+
+    return rawLayerList
+}
+
 export async function getLayerWhere(attrs: any) {
-    await initializeLayerList();
+    await initializeLayerList()
 
     const keys = Object.keys(attrs);
     return rawLayerList.find(layer => keys.every(key => layer[key] === attrs[key]));
 }
 
 export async function getLayerById(id: string): Promise<LayerDefinition> {
-    await initializeLayerList();
+    await initializeLayerList()
 
     return rawLayerList.find(layer => layer.id === id);
 }
 
 export async function getFeatures(layerId: string, opts: any = {}, refresh?: boolean): Promise<Feature<any>[] | null> {
     if (featureList[layerId] && !refresh) {
-        return featureList[layerId];
+        return featureList[layerId]
     }
 
-    const layer = await getLayerById(layerId);
-
+    const layer = await getLayerById(layerId)
     if (layer && layer.typ === "WFS") {
-        console.log(`Fetching features for "${layer.name}"...`)
-        const response = await getFeaturePOST(layer.url, {
+        console.log(`Fetching data for "${layer.name}" (FeatureType: "${layer.featureType}"), from ${layer.url}`)
+        const response = await getFeatureGET(layer.url, {
             featureTypes: [layer.featureType],
             featureNS: layer.featureNS,
             version: layer.version,
-            ...opts
+            ...opts,
+            srsName: opts.srsName || "EPSG:25832",
+            bbox: opts.bbox || config.portal.bbox
         })
         console.log(`Response received for "${layer.name}", parsing features...`)
-        const features = readFeatures(response, layer.featureNS)
 
-
+        const features = readFeatures(response, layer.version, layer.featureNS)
         console.log(`Success! ${features.length} parsed for "${layer.name}".`)
         featureList[layerId] = features
-        return featureList[layerId];
+        return featureList[layerId]
     }
     return undefined;
 }

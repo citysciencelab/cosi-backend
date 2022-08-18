@@ -1,0 +1,735 @@
+[
+  {
+    "category": "bev_insgesamt",
+    "value": "Bevölkerung insgesamt",
+    "group": "Bevölkerung",
+    "statgebiet": "15563",
+    "stadtteil": "19034",
+    "bezirk": "18970",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_weiblich",
+    "value": "Bevölkerung weiblich",
+    "group": "Bevölkerung",
+    "statgebiet": "15565",
+    "stadtteil": "19040",
+    "bezirk": "18976",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_maennlich",
+    "value": "Bevölkerung männlich",
+    "group": "Bevölkerung",
+    "statgebiet": "15564",
+    "stadtteil": "19035",
+    "bezirk": "18971",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_u6",
+    "value": "Bevölkerung unter 6 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15989",
+    "stadtteil": "19039",
+    "bezirk": "18975",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_u18",
+    "value": "Bevölkerung unter 18 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15988",
+    "stadtteil": "19038",
+    "bezirk": "18974",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_10_bis_u15",
+    "value": "Bevölkerung 10 bis unter 15 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15977",
+    "stadtteil": "19025",
+    "bezirk": "18962",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_15_bis_u21",
+    "value": "Bevölkerung 15 bis unter 21 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15978",
+    "stadtteil": "19026",
+    "bezirk": "18963",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_15_bis_u65",
+    "value": "Bevölkerung 15 bis unter 65 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15979",
+    "stadtteil": "19027",
+    "bezirk": "18964",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_21_bis_u45",
+    "value": "Bevölkerung 21 bis unter 45 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15980",
+    "stadtteil": "19028",
+    "bezirk": "18965",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_45_bis_u65",
+    "value": "Bevölkerung 45 bis unter 65 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15981",
+    "stadtteil": "19029",
+    "bezirk": "18966",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_6_bis_u10",
+    "value": "Bevölkerung 6 bis unter 10 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15982",
+    "stadtteil": "19030",
+    "bezirk": "18967",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_ab65",
+    "value": "Bevölkerung ab 65 Jahren",
+    "group": "Bevölkerung",
+    "statgebiet": "15983",
+    "stadtteil": "19031",
+    "bezirk": "18968",
+    "summable": true,
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_auslaender_anz",
+    "value": "Ausländer insgesamt",
+    "group": "Bevölkerung",
+    "statgebiet": "15984",
+    "stadtteil": "19032",
+    "bezirk": "18969",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_auslaender_proz",
+    "value": "Anteil der Ausländer",
+    "group": "Bevölkerung",
+    "statgebiet": "15985",
+    "stadtteil": "19033",
+    "bezirk": "20281",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Ausländer insgesamt",
+      "category_B": "Bevölkerung insgesamt",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "bev_migrationshintergrund_anz",
+    "value": "Bevölkerung mit Migrationshintergrund",
+    "group": "Bevölkerung",
+    "statgebiet": "15986",
+    "stadtteil": "19036",
+    "bezirk": "18972",
+    "valueType": "absolute"
+  },
+  {
+    "category": "bev_migrationshintergrund_proz",
+    "value": "Anteil der Bevölkerung mit Migrationshintergrund",
+    "group": "Bevölkerung",
+    "statgebiet": "15987",
+    "stadtteil": "19037",
+    "bezirk": "18973",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Bevölkerung mit Migrationshintergrund",
+      "category_B": "Bevölkerung insgesamt",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "weiblich_unter_6",
+    "value": "Bevölkerung weiblich unter 6 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "maennlich_unter_6",
+    "value": "Bevölkerung maennlich unter 6 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "weiblich_6_17",
+    "value": "Bevölkerung weiblich 6 bis 17 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "maennlich_6_17",
+    "value": "Bevölkerung maennlich 6 bis 17 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "weiblich_18_64",
+    "value": "Bevölkerung weiblich 18 bis 64 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "maennlich_18_64",
+    "value": "Bevölkerung maennlich 18 bis 64 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "weiblich_ab_65",
+    "value": "Bevölkerung weiblich ab 65 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "maennlich_ab_65",
+    "value": "Bevölkerung maennlich ab 65 Jahren",
+    "group": "Bevölkerung Prognose",
+    "ltf": true,
+    "stadtteil": "22121",
+    "valueType": "absolute"
+  },
+  {
+    "category": "flaeche_brutto_ha",
+    "value": "Bruttofläche in ha",
+    "group": "Fläche",
+    "statgebiet": "15990",
+    "stadtteil": "19041",
+    "bezirk": "18977",
+    "valueType": "absolute"
+  },
+  {
+    "category": "flaeche_einw_pro_ha",
+    "value": "Einwohner je ha",
+    "group": "Fläche",
+    "statgebiet": "15991",
+    "stadtteil": "19042",
+    "bezirk": "18978",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Bevölkerung insgesamt",
+      "category_B": "Bruttofläche in ha"
+    }
+  },
+  {
+    "category": "hau_alleinerziehende_anz",
+    "value": "Alleinerziehende",
+    "group": "Haushalte",
+    "statgebiet": "15994",
+    "stadtteil": "19045",
+    "bezirk": "18981",
+    "valueType": "absolute"
+  },
+  {
+    "category": "hau_alleinerziehende_proz",
+    "value": "Anteil der Alleinerziehenden",
+    "group": "Haushalte",
+    "statgebiet": "15995",
+    "stadtteil": "19046",
+    "bezirk": "18982",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Alleinerziehende",
+      "category_B": "Haushalte mit Kindern",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "hau_einpersonenhaushalte_anz",
+    "value": "Einpersonenhaushalte",
+    "group": "Haushalte",
+    "statgebiet": "15996",
+    "stadtteil": "19047",
+    "bezirk": "18983",
+    "valueType": "absolute"
+  },
+  {
+    "category": "hau_einpersonenhaushalte_proz",
+    "value": "Anteil der Einpersonenhaushalte",
+    "group": "Haushalte",
+    "statgebiet": "15997",
+    "stadtteil": "19048",
+    "bezirk": "18984",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Einpersonenhaushalte",
+      "category_B": "Privathaushalte",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "hau_haushalte_mit_kindern_anz",
+    "value": "Haushalte mit Kindern",
+    "group": "Haushalte",
+    "statgebiet": "15998",
+    "stadtteil": "19049",
+    "bezirk": "18985",
+    "valueType": "absolute"
+  },
+  {
+    "category": "hau_haushalte_mit_kindern_proz",
+    "value": "Anteil der Haushalte mit Kindern",
+    "group": "Haushalte",
+    "statgebiet": "15999",
+    "stadtteil": "19050",
+    "bezirk": "18986",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Haushalte mit Kindern",
+      "category_B": "Privathaushalte",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "hau_haushaltgroesse_avg",
+    "value": "Durchschnittliche Haushaltsgröße",
+    "group": "Haushalte",
+    "statgebiet": "16000",
+    "stadtteil": "19051",
+    "bezirk": "18987",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Bevölkerung insgesamt",
+      "category_B": "Privathaushalte",
+      "modifier": 1
+    }
+  },
+  {
+    "category": "hau_privathaushalte_anz",
+    "value": "Privathaushalte",
+    "group": "Haushalte",
+    "statgebiet": "16001",
+    "stadtteil": "19052",
+    "bezirk": "18988",
+    "valueType": "absolute"
+  },
+  {
+    "category": "soz_sozverpflichtig_beschaeftigte_frauen_15_bis_u65_ant",
+    "value": "Anteil der Sozialversicherungspflichtig beschäftigten Frauen 15 bis unter 65 Jahren",
+    "group": "Sozialversicherungspflichtige",
+    "statgebiet": "16013",
+    "stadtteil": "19064",
+    "bezirk": "19000",
+    "valueType": "relative"
+  },
+  {
+    "category": "soz_sozverpflichtig_beschaeftigte_maenner_15_bis_u65_ant",
+    "value": "Anteil der Sozialversicherungspflichtig beschäftigten Männern 15 bis unter 65 Jahren",
+    "group": "Sozialversicherungspflichtige",
+    "statgebiet": "16014",
+    "stadtteil": "19065",
+    "bezirk": "19001",
+    "valueType": "relative"
+  },
+  {
+    "category": "soz_sozverpflichtig_beschaeftigte_15_bis_u65_ant",
+    "value": "Anteil der Sozialversicherungspflichtig Beschäftigten 15 bis unter 65 Jahren",
+    "group": "Sozialversicherungspflichtige",
+    "statgebiet": "16015",
+    "stadtteil": "19066",
+    "bezirk": "19002",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Sozialversicherungspflichtig Beschäftigte insgesamt",
+      "category_B": "Bevölkerung 15 bis unter 65 Jahren",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "soz_sozverpflichtig_beschaeftigte_frauen",
+    "value": "Sozialversicherungspflichtig beschäftigte Frauen",
+    "group": "Sozialversicherungspflichtige",
+    "statgebiet": "16016",
+    "stadtteil": "19067",
+    "bezirk": "19003",
+    "valueType": "absolute"
+  },
+  {
+    "category": "soz_sozverpflichtig_beschaeftigte_maenner",
+    "value": "Sozialversicherungspflichtig beschäftigte Männer",
+    "group": "Sozialversicherungspflichtige",
+    "statgebiet": "16018",
+    "stadtteil": "19069",
+    "bezirk": "19005",
+    "valueType": "absolute"
+  },
+  {
+    "category": "soz_sozverpflichtig_beschaeftigte_ins_anz",
+    "value": "Sozialversicherungspflichtig Beschäftigte insgesamt",
+    "group": "Sozialversicherungspflichtige",
+    "statgebiet": "16017",
+    "stadtteil": "19068",
+    "bezirk": "19004",
+    "valueType": "absolute"
+  },
+  {
+    "category": "arb_alg2_empfaenger_insgesamt_anz",
+    "value": "SGB II (Arbeitlosengeld II) Empfänger insgesamt",
+    "group": "Arbeitslose",
+    "statgebiet": "15969",
+    "stadtteil": "19017",
+    "bezirk": "18954",
+    "valueType": "absolute"
+  },
+  {
+    "category": "arb_alg2_empfaenger_15_bis_u65_proz",
+    "value": "Anteil der SGB II (Arbeitslosengeld II) Empfänger 15 bis unter 65 Jahren",
+    "group": "Arbeitslose",
+    "statgebiet": "15968",
+    "stadtteil": "19016",
+    "bezirk": "18953",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "SGB II (Arbeitlosengeld II) Empfänger insgesamt",
+      "category_B": "Bevölkerung 15 bis unter 65 Jahren",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "arb_alg2_empfaenger_insgesamt_proz",
+    "value": "Anteil der SGB II (Arbeitslosengeld II) Empfänger insgesamt",
+    "group": "Arbeitslose",
+    "statgebiet": "15970",
+    "stadtteil": "19018",
+    "bezirk": "18955",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "SGB II (Arbeitlosengeld II) Empfänger insgesamt",
+      "category_B": "Bevölkerung insgesamt",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "arb_alg_empfaenger_insgesamt_anz",
+    "value": "SGB III (Arbeitslosengeld) Empfänger insgesamt",
+    "group": "Arbeitslose",
+    "statgebiet": "15972",
+    "stadtteil": "19020",
+    "bezirk": "18957",
+    "valueType": "absolute"
+  },
+  {
+    "category": "arb_alg_empfaenger_15_bis_u65_proz",
+    "value": "Anteil der SGB III (Arbeitslosengeld) Empfänger 15 bis unter 65 Jahren",
+    "group": "Arbeitslose",
+    "statgebiet": "15971",
+    "stadtteil": "19019",
+    "bezirk": "18956",
+    "valueType": "relative"
+  },
+  {
+    "category": "arb_alg_empfaenger_insgesamt_proz",
+    "value": "Anteil der SGB III (Arbeitslosengeld) Empfänger insgesamt",
+    "group": "Arbeitslose",
+    "statgebiet": "15973",
+    "stadtteil": "19021",
+    "bezirk": "18958",
+    "valueType": "relative"
+  },
+  {
+    "category": "arb_arbeitslose_ingesamt_anz",
+    "value": "Arbeitslose insgesamt",
+    "group": "Arbeitslose",
+    "statgebiet": "15975",
+    "stadtteil": "19023",
+    "bezirk": "18960",
+    "valueType": "absolute"
+  },
+  {
+    "category": "arb_arbeitslose_15_bis_u65_proz",
+    "value": "Anteil der Arbeitslosen 15 bis unter 65 Jahren",
+    "group": "Arbeitslose",
+    "statgebiet": "15974",
+    "stadtteil": "19022",
+    "bezirk": "18959",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Arbeitslose insgesamt",
+      "category_B": "Bevölkerung 15 bis unter 65 Jahren",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "arb_arbeitslose_ingesamt_proz",
+    "value": "Anteil der Arbeitslosen",
+    "group": "Arbeitslose",
+    "statgebiet": "15976",
+    "stadtteil": "19024",
+    "bezirk": "18961",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Arbeitslose insgesamt",
+      "category_B": "Bevölkerung insgesamt",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "sgb_anteil_an_bev_15_bis_u25_proz",
+    "value": "Anteil an der Bevölkerung 15 bis unter 25 Jahren",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16002",
+    "stadtteil": "19053",
+    "bezirk": "18989",
+    "valueType": "relative"
+  },
+  {
+    "category": "sgb_anteil_an_bev_u15_proz",
+    "value": "Anteil an der Bevölkerung unter 15 Jahren",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16003",
+    "stadtteil": "19054",
+    "bezirk": "18990",
+    "valueType": "relative"
+  },
+  {
+    "category": "sgb_anteil_an_der_auslaendischen_bev_erw_15_bis_u65_proz",
+    "value": "Anteil der ausländischen Bevölkerung 15 bis unter 65 Jahren",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16004",
+    "stadtteil": "19055",
+    "bezirk": "18991",
+    "valueType": "relative"
+  },
+  {
+    "category": "sgb_anteil_an_der_bev_15_bis_u65_proz",
+    "value": "Anteil an der Bevölkerung 15 bis unter 65 Jahren",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16005",
+    "stadtteil": "19056",
+    "bezirk": "18992",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Erwerbsfähige Leistungsempfänger/-innen nach SGB II",
+      "category_B": "Bevölkerung 15 bis unter 65 Jahren",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "sgb_anteil_an_der_bevoelkerung_ins_proz",
+    "value": "Anteil an der Bevölkerung der Leistungsempfänger/-innen insgesamt",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16006",
+    "stadtteil": "19057",
+    "bezirk": "18993",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Leistungsempfänger/-innen nach SGB II",
+      "category_B": "Bevölkerung insgesamt",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "sgb_auslaendische_erwerbsf_leistungsempfaenger_anz",
+    "value": "Ausländische erwerbsfähige Leistungsempfänger/-innen nach SGB II",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16007",
+    "stadtteil": "19058",
+    "bezirk": "18994",
+    "valueType": "absolute"
+  },
+  {
+    "category": "sgb_bedarfsgemeinschaften_anz",
+    "value": "Bedarfsgemeinschaften nach SGB II",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16008",
+    "stadtteil": "19059",
+    "bezirk": "18995",
+    "valueType": "absolute"
+  },
+  {
+    "category": "sgb_erwerbsfaehige_lstempfaenger_anz",
+    "value": "Erwerbsfähige Leistungsempfänger/-innen nach SGB II",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16009",
+    "stadtteil": "19060",
+    "bezirk": "18996",
+    "valueType": "absolute"
+  },
+  {
+    "category": "sgb_jugendl_lstempfaenger_15_bis_u25_anz",
+    "value": "Leistungsempfänger/-innen nach SGB II 15 bis unter 25 Jahren",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16010",
+    "stadtteil": "19061",
+    "bezirk": "18997",
+    "valueType": "absolute"
+  },
+  {
+    "category": "sgb_leistungsempfaenger_anz",
+    "value": "Leistungsempfänger/-innen nach SGB II",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16011",
+    "stadtteil": "19062",
+    "bezirk": "18998",
+    "valueType": "absolute"
+  },
+  {
+    "category": "sgb_nicht_erwebsf_lstempfaenger_u15_anz",
+    "value": "Nicht erwerbsfähige Leistungs-empfänger/-innen nach SGB II",
+    "group": "SGB II Leistungen",
+    "statgebiet": "16012",
+    "stadtteil": "19063",
+    "bezirk": "18999",
+    "valueType": "absolute"
+  },
+  {
+    "category": "gsa_anteil_bev_65_und_aelter_proz",
+    "value": "Anteil der Bevölkerung ab 65 Jahren",
+    "group": "Grundsicherung im Alter",
+    "statgebiet": "15992",
+    "stadtteil": "19043",
+    "bezirk": "18979",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Empfänger von Grundsicherung und weiteren Hilfeleistungen ab 65 Jahre",
+      "category_B": "Bevölkerung ab 65 Jahren",
+      "modifier": 100
+    }
+  },
+  {
+    "category": "gsa_empfaenger_grundsicherung_65_und_aelter_anz",
+    "value": "Empfänger von Grundsicherung und weiteren Hilfeleistungen ab 65 Jahre",
+    "group": "Grundsicherung im Alter",
+    "statgebiet": "15993",
+    "stadtteil": "19044",
+    "bezirk": "18980",
+    "valueType": "absolute"
+  },
+  {
+    "category": "wohn_mit_bindungsauslauf_anz",
+    "value": "Sozialwohnung mit Bindungsauslauf",
+    "group": "Wohnen",
+    "statgebiet": "16024",
+    "stadtteil": "19075",
+    "bezirk": "19012",
+    "valueType": "absolute"
+  },
+  {
+    "category": "wohn_sozialwohnungen_ins_anz",
+    "value": "Sozialwohnungen",
+    "group": "Wohnen",
+    "statgebiet": "16025",
+    "stadtteil": "19076",
+    "bezirk": "19013",
+    "valueType": "absolute"
+  },
+  {
+    "category": "wohn_wohngebaeude_anz",
+    "value": "Wohngebäude",
+    "group": "Wohnen",
+    "statgebiet": "16026",
+    "stadtteil": "19077",
+    "bezirk": "19014",
+    "valueType": "absolute"
+  },
+  {
+    "category": "wohn_wohnungen_in_wohn_und_nichtwohngebauede_anz",
+    "value": "Wohnungen in Wohn- und Nichtwohngebäuden",
+    "group": "Wohnen",
+    "statgebiet": "16027",
+    "stadtteil": "19078",
+    "bezirk": "19015",
+    "valueType": "absolute"
+  },
+  {
+    "category": "ver_anteil_pkw_schadstoffkl_4_bis_6_gruene_plakette_proz",
+    "value": "Anteil der PKW mit Schadstoffklasse 4 bis 6",
+    "group": "Verkehr",
+    "statgebiet": "16019",
+    "stadtteil": "19070",
+    "bezirk": "19007",
+    "valueType": "relative"
+  },
+  {
+    "category": "ver_gewerbl_pkw_anz",
+    "value": "Gewerbliche PKW",
+    "group": "Verkehr",
+    "statgebiet": "16020",
+    "stadtteil": "19071",
+    "bezirk": "19007",
+    "valueType": "absolute"
+  },
+  {
+    "category": "ver_pkw_bestand_ins_anz",
+    "value": "PKW Bestand",
+    "group": "Verkehr",
+    "statgebiet": "16021",
+    "stadtteil": "19072",
+    "bezirk": "19009",
+    "valueType": "absolute"
+  },
+  {
+    "category": "ver_private_pkw_anz",
+    "value": "Private PKW",
+    "group": "Verkehr",
+    "statgebiet": "16022",
+    "stadtteil": "19073",
+    "bezirk": "19010",
+    "valueType": "absolute"
+  },
+  {
+    "category": "ver_private_pkw_je_1000_EW_anz",
+    "value": "Private PKW je 1000 Einwohner",
+    "group": "Verkehr",
+    "statgebiet": "16023",
+    "stadtteil": "19074",
+    "bezirk": "19011",
+    "valueType": "relative",
+    "calculation": {
+      "operation": "divide",
+      "category_A": "Private PKW",
+      "category_B": "Bevölkerung insgesamt",
+      "modifier": 1000
+    }
+  }
+]

@@ -1,5 +1,11 @@
-import * as dotenv from "dotenv";
-import config from "../config.json"
+import Path from 'path'
+import {fileURLToPath} from 'url'
+import * as dotenv from "dotenv"
+import config from "../../public/config.json"
+
+// tslint:disable: variable-name
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = Path.dirname(__filename);
 
 dotenv.config();
 let path: string
