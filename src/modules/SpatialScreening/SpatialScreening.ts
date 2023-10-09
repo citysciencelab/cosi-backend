@@ -2,7 +2,7 @@ import config from "../../utils/config.loader"
 import { getFeatures } from "../../layer"
 import { fetchDistricts, getDistrictLevel, prepareDistrictLevel } from "../../utils/districtLevels.js"
 import { fetchDistrictStats, getStatsKey, trimTimestampPrefix } from "../../utils/districtStats"
-import { DistrictLevel, District, Operation } from "SpatialScreening"
+import { DistrictLevel, District, Operation, SpatialScreeningOptions } from "SpatialScreening"
 import { Feature } from "ol"
 import { GeoJSON } from "ol/format.js"
 import { LineString, MultiLineString, MultiPolygon, Point, Polygon } from "ol/geom";
@@ -29,6 +29,33 @@ import { getIntersection } from "ol/extent"
 import booleanIntersects from "@turf/boolean-intersects"
 
 const timestampPrefix = config.portal.stats.timestampPrefix
+const _layers = {
+    count: 0,
+    inputs: {
+        polygon: [],
+        point: [],
+        line: [],
+        wms: [],
+    },
+    features: {
+        polygon: {},
+        point: {},
+        line: {},
+    }
+}
+const _log = {
+    errors: 0,
+    successes: 0,
+    process: {
+        initTime: undefined,
+        finishRequestsTime: undefined,
+        finishProcessingTime: undefined,
+        tPolygon: 0,
+        tPoint: 0,
+        tLine: 0,
+        tWMS: 0
+    }
+}
 
 function calcFallbackValue (values: any[], callback: CallableFunction = median): number {
     const _values = values.filter((v: any) => !isNaN(v) && v !== Infinity)
@@ -146,48 +173,6 @@ function trimLinesByPolygon (
         return res
 
     return new GeoJSON({featureProjection: sourceCrs}).readFeature(res) as Feature<LineString>
-}
-
-interface SpatialScreeningOptions {
-    districtLevel: {layerId?: string, label?: string},
-    timescope?: "latest" | number | number[]
-    stats?: string[],
-    layers: {
-        polygon?: (string|string[])[][],
-        line?: (string|string[])[][],
-        point?: (string|string[])[][],
-        wms?: (string|string[])[][]
-    },
-    crs?: string
-    bbox?: number[]
-}
-
-const _layers = {
-    count: 0,
-    inputs: {
-        polygon: [],
-        point: [],
-        line: [],
-        wms: [],
-    },
-    features: {
-        polygon: {},
-        point: {},
-        line: {},
-    }
-}
-const _log = {
-    errors: 0,
-    successes: 0,
-    process: {
-        initTime: undefined,
-        finishRequestsTime: undefined,
-        finishProcessingTime: undefined,
-        tPolygon: 0,
-        tPoint: 0,
-        tLine: 0,
-        tWMS: 0
-    }
 }
 
 class SpatialScreening {

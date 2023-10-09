@@ -31,4 +31,18 @@ declare module "SpatialScreening" {
     export type Operation = "geom" | "sum" | "mean" | "median"
     // export type AreaOperation = "area" | "sum" | "mean" | "median"
     // export type LineOperation = "line" | "sum" | "mean" | "median"
+
+    export interface SpatialScreeningOptions {
+        districtLevel: {layerId?: string, label?: string},
+        timescope?: "latest" | number | number[]
+        stats?: string[],
+        layers: {
+            polygon?: (string|string[])[][],
+            line?: (string|string[])[][],
+            point?: (string|string[])[][],
+            wms?: (string|string[])[][]
+        },
+        crs?: string
+        bbox?: number[]
+    }
 }
